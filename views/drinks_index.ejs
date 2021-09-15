@@ -11,7 +11,7 @@
     <ul>
         <% tapList.forEach((tap, i)=>{ %>
             <li>
-                <a href="drinks/<%=i%>"><%=tapList[i].name %></a>
+                <a href="drinks/<%=i%>"><%=tapList[i].name.charAt(0).toUpperCase()+tapList[i].name.slice(1) %></a>
             </li>
             
         <%})%>

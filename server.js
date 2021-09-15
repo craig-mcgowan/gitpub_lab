@@ -11,3 +11,7 @@ app.get("/", (req, res) => {
 app.get("/drinks", (req, res) =>{
     res.render("drinks_index.ejs", {tapList: drinks})
 })
+
+app.get("/drinks/:id", (req, res) => {
+    res.render('drinks_show.ejs', {drink: drinks[req.params.id]})
+})

@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) =>{
-    res.render("drinks_index.ejs", {tapList: drinks})
+    res.render("drinks_index.ejs", {drinkList: drinks})
 })
 
 app.get("/drinks/:id", (req, res) => {

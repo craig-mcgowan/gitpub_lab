@@ -7,11 +7,11 @@
 </head>
 <body>
     <h1>Welcome to gitPub, Pull up a stool!</h1>
-    <p>Here's What's on Tap Today:</p>
+    <p>Here's What We're Offering Today:</p>
     <ul>
-        <% tapList.forEach((tap, i)=>{ %>
+        <% drinkList.forEach((tap, i)=>{ %>
             <li>
-                <a href="drinks/<%=i%>"><%=tapList[i].name.charAt(0).toUpperCase()+tapList[i].name.slice(1) %></a>
+                <a href="drinks/<%=i%>"><%=drinkList[i].name.charAt(0).toUpperCase()+drinkList[i].name.slice(1) %></a>
             </li>
             
         <%})%>

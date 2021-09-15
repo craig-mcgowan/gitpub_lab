@@ -7,10 +7,29 @@
 </head>
 <body>
     <h1>Welcome to gitPub, Pull up a stool!</h1>
+    <p>Here's What's on Tap Today:</p>
+    <ul>
+        <% tapList.forEach((tap, i)=>{ %>
+            <li>
+                <a href="drinks/<%=i%>"><%=tapList[i].name %></a>
+            </li>
+            
+        <%})%>
+
+
+
+    </ul>
+
+
+
     <style>
         body{
             color:seashell;
             background-color:dodgerblue;
+        }
+        a{
+            text-decoration:none;
+            color: white
         }
     </style>
 </body>

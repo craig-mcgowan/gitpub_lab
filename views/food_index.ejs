@@ -7,36 +7,32 @@
 </head>
 <body>
     <h1>Welcome to gitPub, Pull up a stool!</h1>
-    <p>Here's What We're Offering Today:</p>
+    <p>If you're hungry, here's what we've got:</p>
     <ul>
-        <% drinkList.forEach((tap, i)=>{ %>
+        <% menu.forEach((item, i)=>{ %>
             <li>
-                <a href="drinks/<%=i%>"><%=drinkList[i].name.charAt(0).toUpperCase()+drinkList[i].name.slice(1) %></a>
+                <a href="food/<%=i%>"><%=menu[i].name.charAt(0).toUpperCase()+menu[i].name.slice(1) %></a>
             </li>
             
         <%})%>
 
-
-
     </ul>
     <br>
-    <a href="/food">
-        <button>Food Menu</button>
+    <a href="/drinks">
+        <button>Drink Menu</button>
     </a>
-
-
 
     <style>
         body{
             color:seashell;
-            background-color:dodgerblue;
+            background-color:firebrick;
         }
         a{
             text-decoration:none;
-            color: white
+            color: white;
         }
         a:hover{
-            color:burlywood;
+            color:rgb(159, 201, 255);
             font-size: large;
         }
     </style>

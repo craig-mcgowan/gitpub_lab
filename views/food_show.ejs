@@ -7,12 +7,11 @@
 </head>
 <body>
     <h1>At foo bar</h1>
-    <a href="/drinks">back</a>
-    <h2><%=drink.name.split("")
-        <!-- not DRY, in real life would save the function used in index to uppercase name and call it it both instances but I wanted to practice doing it a couple ways  -->
+    <a href="/food">back</a>
+    <h2><%=food.name.split("")
         .map((letter, i) => i? letter:letter.toUpperCase())
         .join("") %></h2>
-        <h3>$<%=drink.price %></h3>
-        <img src="<%=drink.image %>" alt="<%drink.name%>">
+        <h3>$<%=food.price %></h3>
+        <img src="<%=food.image %>" alt="<%food.name%>">
         
     </ul>
